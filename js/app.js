@@ -1,6 +1,20 @@
 const handleScrolling = (e) => {
   e.preventDefault();
-  console.log(e);
+  const scrolled = window.scrollY;
+  navItems.forEach((navItem) => {
+    let sectionId = navItem.toLowerCase();
+    sectionEl = document.querySelector(`#${sectionId}`);
+    let rect = sectionEl.getBoundingClientRect();
+    if (rect.y < 100) {
+      removeAllHighlights();
+      //   highlight section
+      addHighlight(sectionEl);
+      //   highlight related navbar item
+      const navBarItem = "nav-" + sectionId;
+      const navBarItemEl = document.querySelector(`#${navBarItem}`);
+      addHighlight(navBarItemEl);
+    }
+  });
 };
 
 const handleNavItemClick = (e) => {
