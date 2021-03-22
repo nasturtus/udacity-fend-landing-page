@@ -12,7 +12,7 @@ body {
   grid-template-columns: 1fr;
 }
 
-/* header: includes page-title and navigation */
+/* header: includes navigation and hero image */
 
 header {
   background-image: url("../images/saxon-white-cFCpvWq86Bo-unsplash.jpg");
@@ -20,7 +20,6 @@ header {
   width: 100vw;
   height: 100vh;
   text-align: center;
-  /* margin-bottom: 100px; */
 }
 
 .fixed-header {
@@ -31,9 +30,13 @@ header {
   background-color: white;
 }
 
+.page-title {
+  padding-top: 150px;
+  color: white;
+}
+
 .page-title,
 .slogan {
-  font-family: "Playfair Display", serif;
   font-weight: 900;
   font-style: italic;
   font-size: 30px;
@@ -60,21 +63,12 @@ h1,
 
 /* content section */
 
-section {
-  overflow: scroll;
-}
-
 .sub-section {
   padding: 35px;
 }
 
 .highlight {
   color: blue;
-}
-
-.offsets {
-  padding-top: 150px;
-  /* margin-top: -175px; */
 }
 
 /* footer */
