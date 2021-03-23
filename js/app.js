@@ -1,3 +1,5 @@
+// event handlers
+
 const handleScrolling = (e) => {
   e.preventDefault();
   navItems.forEach((navItem) => {
